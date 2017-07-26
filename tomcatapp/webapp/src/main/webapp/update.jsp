@@ -1,11 +1,20 @@
+ <center>
+<table border="20">
+<tr>
+<td>
+        <h1>Update your Details here</h1>
+        <h2>Enter your Email here</h2>
+        <img src="Penguins.jpg" class="img-responsive" alt="image" width="350" height="150">  
+    </center>
 <form action="EditUser" method="POST">
-<table>
-                <tr>    
-                    <td>Enter Email</td>
+<center>
+<table >
+                <tr>  
                     <td><input type="email" name="email"></td>
-                </tr>
-                <tr>
-                <td><input type="submit" value="submit"></td>
-                </tr>
-</table>
+                </tr></table>
+                     <center><input type="submit" value="submit"> </center>
 </form>
+</td>
+</tr>
+</table>
+ </center>

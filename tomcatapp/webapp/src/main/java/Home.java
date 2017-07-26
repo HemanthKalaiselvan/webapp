@@ -41,19 +41,18 @@ public void doPost(HttpServletRequest request, HttpServletResponse response)
             ResultSet rs=statement.executeQuery();
             String username=request.getParameter("username");
             String pwd=request.getParameter("password");
-            System.out.println(username);
-            System.out.println(pwd);
+            
            
           while(rs.next())
           {
                 u_name=rs.getString(1);
                 pass=rs.getString(2);
-                System.out.println(u_name);
-                System.out.println(pass);
               if((username.equals(u_name))&&(pwd.equals(pass)))
               {
                   flag=1;
-                   out.print("<br><h1>Welcome to our company</h1><br>");
+                   out.print("<br><center><h1>Hi,"+u_name+"</h1><h1>Welcome to our company</h1></center><br>");
+                    RequestDispatcher rs1=request.getRequestDispatcher("welcome1.jsp");
+                rs1.include(request,response);
                    break;
               } 
           }

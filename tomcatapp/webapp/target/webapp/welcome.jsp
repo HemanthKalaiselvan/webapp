@@ -3,16 +3,16 @@
         <title>Welcome Page</title>
     </head>
     <body>
+    <center>
+    <table border="30">
+    <tr>
+        <td>
     <div class="welcome">
     <center>
         <h1>HOME PAGE</h1>
+        <img src="Penguins.jpg" class="img-responsive" alt="image" width="300" height="150">  
     </center>
     </div>
-    <div class="container-fluid">
-  <h1>My First Bootstrap Page</h1>      
-  <p>This part is inside a .container-fluid class.</p> 
-  <p>The .container-fluid class provides a full width container, spanning the entire width of the viewport.</p>           
-</div>
         <form action="Home" method="POST">
             <center>
             <table>
@@ -29,12 +29,24 @@
                     <td><input type="submit" value="Login"></td>
                 </tr>
                 <tr>
-                    <td><a href="ViewUser">View here</a></td>
-                    <td><a href="delete.jsp">Delete</a></td>
-                    <td><a href="update.jsp">Update</a></td>
+                <div class="row">
+                    <div class="col-xs-4">
+                    <td><button class="btn btn-info" type="submit"><a href="ViewUser">View here</a></button></td>
+                    </div>
+                    <div class="col-xs-4" style="background-color:lavenderblush;">
+                    <td><button class="btn btn-danger" type="submit"><a href="delete.jsp">Delete</a></button></td>
+                    </div>
+                    <div class="col-xs-4">
+                    <td><button class="btn" type="submit"><a href="update.jsp">Update</a></button></td>
+                    </div>
+                    </div>
                 </tr>
             </table>
             </center>
         </form>
+        </td>
+      </tr>
+    </table>
+    </center>
     </body>
 </html>

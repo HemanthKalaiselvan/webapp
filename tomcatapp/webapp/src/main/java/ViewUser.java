@@ -13,18 +13,18 @@ public class ViewUser extends HttpServlet {
                throws ServletException, IOException {  
         response.setContentType("text/html");  
         PrintWriter out=response.getWriter();  
-        out.println("<a href='welcome.jsp'>Add New User</a>");  
+        out.println("<center><a href='welcome.jsp'>Add New User</a>");  
         out.println("<h1>User List</h1>");  
           
-        List<UserPojo> list=UserCrud.getAllUser();  
-          
-        out.print("<table border='1' width='100%'");  
-        out.print("<tr><th>Name</th><th>Password</th><th>Email</th><th>Dob</th></tr>");  
+        List<UserPojo> list=UserCrud.getAllUser(); 
+        out.println("<head><style> .tap { background-image: url('student.jpg'); height:350px; width:750px;}</style></head>") ;
+        out.print("<table class='tap' border='1' width='100%'");  
+        out.print("<tr><th>Name</th><th>Password</th><th>DOB</th><th>Email</th></tr>");  
         for(UserPojo e:list)
         {  
          out.print("<tr><td>"+e.getName()+"</td><td>"+e.getPassword()+"</td><td>"+e.getDob()+"</td><td>"+e.getEmail()+"</td></tr>");  
         }  
-        out.print("</table>");  
+        out.print("</table> </center>");  
           
         out.close();  
     }  

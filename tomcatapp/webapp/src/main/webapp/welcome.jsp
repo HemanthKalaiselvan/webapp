@@ -29,17 +29,7 @@
                     <td><input type="submit" value="Login"></td>
                 </tr>
                 <tr>
-                <div class="row">
-                    <div class="col-xs-4">
-                    <td><button class="btn btn-info" type="submit"><a href="ViewUser">View here</a></button></td>
-                    </div>
-                    <div class="col-xs-4" style="background-color:lavenderblush;">
-                    <td><button class="btn btn-danger" type="submit"><a href="delete.jsp">Delete</a></button></td>
-                    </div>
-                    <div class="col-xs-4">
-                    <td><button class="btn" type="submit"><a href="update.jsp">Update</a></button></td>
-                    </div>
-                    </div>
+                
                 </tr>
             </table>
             </center>

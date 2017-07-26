@@ -45,7 +45,9 @@ public class Registeration extends HttpServlet
             statement.executeUpdate();
             
             out.println(user_name);
-            out.print("<br><h1>Your details registered successfully</h1><br>"); 
+            out.print("<br><h1>Your details registered successfully</h1><br>");
+            RequestDispatcher rs1=request.getRequestDispatcher("SendEmail");
+                   rs1.include(request,response); 
             RequestDispatcher rs=request.getRequestDispatcher("welcome.jsp");  
             rs.include(request, response);
            // response.sendRedirect("welcome.jsp");

@@ -1,8 +1,16 @@
 <html>
     <body>
+    <center>
+    <table border="10">
+    <tr>
+    <td>
+    <center><h1>Registeration Form</h1>
+     <img src="Penguins.jpg" class="img-responsive" alt="image" width="300" height="150">
+     </center>
         <form action="Registeration" method="POST">
+            <center>
             <table>
-                <tr>
+                <tr> 
                     <td>Username</td>
                     <td><input type="text" name="username"></td>
                 </tr>
@@ -24,5 +32,9 @@
                 </tr>
             </table>
         </form>
+        </td>
+        </tr>
+        </table>
+        </center>
     </body>
 </html>
